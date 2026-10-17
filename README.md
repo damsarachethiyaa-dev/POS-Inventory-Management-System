@@ -1,6 +1,29 @@
 # POS & Inventory Management System 🛒📦
 
+[![Release](https://img.shields.io/badge/Release-v1.0.0--Standalone-blue?style=flat-square&logo=github)](https://github.com/damsarachethiyaa-dev/POS-Inventory-Management-System/releases/latest)
+[![Java](https://img.shields.io/badge/Java-8%20%7C%2017%20LTS-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
+[![Swing](https://img.shields.io/badge/GUI-Java%20Swing%20%2B%20FlatLaf-5382a1?style=flat-square)](https://www.formdev.com/flatlaf/)
+[![MySQL](https://img.shields.io/badge/Database-MySQL%208.0-005C84?style=flat-square&logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![JasperReports](https://img.shields.io/badge/Reports-JasperReports%206.21-green?style=flat-square)](https://community.jaspersoft.com/)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
+
 A modern, responsive desktop Point of Sale (POS) and Inventory Management System built with **Java Swing**, **FlatLaf**, **JasperReports**, and **MySQL**. Designed for retail businesses and storefronts requiring fast checkout, automated stock tracking, customer relationship management, and invoice/report generation.
+
+---
+
+## 🎮 Quick Demo: Run Without Installing Java / NetBeans
+
+A pre-packaged standalone Windows binary with embedded JRE runtime is available directly in the [Releases](https://github.com/damsarachethiyaa-dev/POS-Inventory-Management-System/releases/latest):
+
+1. **Download:** [**`POS-Windows-v1.0.0.zip`**](https://github.com/damsarachethiyaa-dev/POS-Inventory-Management-System/releases/latest) (Standalone Windows Bundle).
+2. **Database:** Ensure your local MySQL service has the schema from [`database/POS_DB.sql`](database/POS_DB.sql) imported.
+3. **Launch:** Extract the zip and double-click `POS.exe` to run the application immediately!
+
+#### Default Demo Credentials:
+| Account Type | Email | Password | Role |
+| :--- | :--- | :--- | :--- |
+| **System Admin** | `admin@pos.com` | `admin123` | Administrator |
+| **Manager / Cashier** | `damsara@pos.com` | `pass123` | Active Staff |
 
 ---
 
