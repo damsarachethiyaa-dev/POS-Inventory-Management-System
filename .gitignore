@@ -29,3 +29,5 @@ replay_pid*
 Thumbs.db
 [Dd]esktop.ini
 .DS_Store
+
+*.zip
