@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="customerReport" pageWidth="842" pageHeight="595" orientation="Landscape"
+              columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20"
+              whenNoDataType="AllSectionsNoDetail">
+
+    <field name="COLUMN_0" class="java.lang.String"/>
+    <field name="COLUMN_1" class="java.lang.String"/>
+    <field name="COLUMN_2" class="java.lang.String"/>
+    <field name="COLUMN_3" class="java.lang.String"/>
+
+    <title>
+        <band height="74">
+            <rectangle>
+                <reportElement x="0" y="0" width="802" height="62" backcolor="#2E5C8A" mode="Opaque"/>
+                <graphicElement><pen lineWidth="0.0"/></graphicElement>
+            </rectangle>
+            <staticText>
+                <reportElement x="14" y="8" width="430" height="30" forecolor="#FFFFFF"/>
+                <textElement><font fontName="SansSerif" size="20" isBold="true"/></textElement>
+                <text><![CDATA[Customer Report]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="14" y="40" width="430" height="16" forecolor="#DCE6F2"/>
+                <textElement><font fontName="SansSerif" size="10"/></textElement>
+                <text><![CDATA[POS & Inventory Management System]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="454" y="40" width="180" height="16" forecolor="#DCE6F2"/>
+                <textElement textAlignment="Right"><font fontName="SansSerif" size="9"/></textElement>
+                <textFieldExpression><![CDATA["Generated: " + new java.text.SimpleDateFormat("dd-MM-yyyy HH:mm").format(new java.util.Date())]]></textFieldExpression>
+            </textField>
+            <rectangle>
+                <reportElement x="640" y="6" width="162" height="50" backcolor="#FFFFFF" mode="Opaque"/>
+                <graphicElement><pen lineWidth="0.0"/></graphicElement>
+            </rectangle>
+            <componentElement>
+                <reportElement x="646" y="9" width="150" height="44"/>
+                <jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components"
+                             xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd"
+                             type="Code128" drawText="true" checksumRequired="false">
+                    <jr:codeExpression><![CDATA["CUS-" + new java.text.SimpleDateFormat("yyyyMMddHHmmss").format(new java.util.Date())]]></jr:codeExpression>
+                </jr:barbecue>
+            </componentElement>
+        </band>
+    </title>
+
+    <columnHeader>
+        <band height="26">
+            <rectangle>
+                <reportElement x="0" y="0" width="802" height="26" backcolor="#4A78A8" mode="Opaque"/>
+                <graphicElement><pen lineWidth="0.0"/></graphicElement>
+            </rectangle>
+            <staticText><reportElement x="6" y="0" width="94" height="26" forecolor="#FFFFFF"/><textElement textAlignment="Center" verticalAlignment="Middle"><font fontName="SansSerif" size="11" isBold="true"/></textElement><text><![CDATA[Customer ID]]></text></staticText>
+            <staticText><reportElement x="100" y="0" width="250" height="26" forecolor="#FFFFFF"/><textElement textAlignment="Left" verticalAlignment="Middle"><font fontName="SansSerif" size="11" isBold="true"/></textElement><text><![CDATA[  Customer Name]]></text></staticText>
+            <staticText><reportElement x="350" y="0" width="200" height="26" forecolor="#FFFFFF"/><textElement textAlignment="Center" verticalAlignment="Middle"><font fontName="SansSerif" size="11" isBold="true"/></textElement><text><![CDATA[Mobile Number]]></text></staticText>
+            <staticText><reportElement x="550" y="0" width="252" height="26" forecolor="#FFFFFF"/><textElement textAlignment="Left" verticalAlignment="Middle"><font fontName="SansSerif" size="11" isBold="true"/></textElement><text><![CDATA[  Email]]></text></staticText>
+        </band>
+    </columnHeader>
+
+    <detail>
+        <band height="26">
+            <rectangle>
+                <reportElement x="0" y="0" width="802" height="26" backcolor="#EEF3F9" mode="Opaque">
+                    <printWhenExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue() % 2 == 0)]]></printWhenExpression>
+                </reportElement>
+                <graphicElement><pen lineWidth="0.0"/></graphicElement>
+            </rectangle>
+            <textField><reportElement x="6" y="0" width="94" height="26"/><textElement textAlignment="Center" verticalAlignment="Middle"><font fontName="SansSerif" size="10"/></textElement><textFieldExpression><![CDATA[$F{COLUMN_0}]]></textFieldExpression></textField>
+            <textField isStretchWithOverflow="true"><reportElement x="106" y="0" width="244" height="26"/><textElement verticalAlignment="Middle"><font fontName="SansSerif" size="10"/></textElement><textFieldExpression><![CDATA[$F{COLUMN_1}]]></textFieldExpression></textField>
+            <textField><reportElement x="350" y="0" width="200" height="26"/><textElement textAlignment="Center" verticalAlignment="Middle"><font fontName="SansSerif" size="10"/></textElement><textFieldExpression><![CDATA[$F{COLUMN_2}]]></textFieldExpression></textField>
+            <textField isStretchWithOverflow="true"><reportElement x="556" y="0" width="246" height="26"/><textElement verticalAlignment="Middle"><font fontName="SansSerif" size="10"/></textElement><textFieldExpression><![CDATA[$F{COLUMN_3}]]></textFieldExpression></textField>
+            <line><reportElement x="0" y="25" width="802" height="1" forecolor="#D5DEE9"/></line>
+        </band>
+    </detail>
+
+    <pageFooter>
+        <band height="20">
+            <line><reportElement x="0" y="0" width="802" height="1" forecolor="#2E5C8A"/></line>
+            <textField>
+                <reportElement x="0" y="4" width="400" height="14" forecolor="#777777"/>
+                <textElement><font fontName="SansSerif" size="8"/></textElement>
+                <textFieldExpression><![CDATA["POS & Inventory Management System — Customer Report"]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="602" y="4" width="200" height="14" forecolor="#777777"/>
+                <textElement textAlignment="Right"><font fontName="SansSerif" size="8"/></textElement>
+                <textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+            </textField>
+        </band>
+    </pageFooter>
+</jasperReport>

@@ -1,0 +1,31 @@
+# NetBeans build outputs
+/build/
+/dist/
+nbproject/private/
+
+# Packaged installer and bundled JRE runtimes
+/installer/
+
+# Logs
+*.log
+app.log
+
+# IDE & Editor files
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.classpath
+.project
+.settings/
+.vscode/
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*
+
+# OS generated files
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store
