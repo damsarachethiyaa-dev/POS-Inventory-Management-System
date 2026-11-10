@@ -1,13 +1,40 @@
-# POS & Inventory Management System 🛒📦
+<div align="center">
 
-[![Release](https://img.shields.io/badge/Release-v1.0.0--Standalone-blue?style=flat-square&logo=github)](https://github.com/damsarachethiyaa-dev/POS-Inventory-Management-System/releases/latest)
-[![Java](https://img.shields.io/badge/Java-8%20%7C%2017%20LTS-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
-[![Swing](https://img.shields.io/badge/GUI-Java%20Swing%20%2B%20FlatLaf-5382a1?style=flat-square)](https://www.formdev.com/flatlaf/)
-[![MySQL](https://img.shields.io/badge/Database-MySQL%208.0-005C84?style=flat-square&logo=mysql&logoColor=white)](https://www.mysql.com/)
-[![JasperReports](https://img.shields.io/badge/Reports-JasperReports%206.21-green?style=flat-square)](https://community.jaspersoft.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
+  # POS & Inventory Management System
 
-A modern, responsive desktop Point of Sale (POS) and Inventory Management System built with **Java Swing**, **FlatLaf**, **JasperReports**, and **MySQL**. Designed for retail businesses and storefronts requiring fast checkout, automated stock tracking, customer relationship management, and invoice/report generation.
+  ### Desktop App — Java Swing
+
+  **Fast checkout. Honest stock. Clear reports.**  
+  *Role-based sales, products, customers and JasperReports invoices on a local MySQL database.*
+
+  <br />
+
+  <p>
+    <a href="https://github.com/damsarachethiyaa-dev/POS-Inventory-Management-System/releases/latest"><img src="https://img.shields.io/badge/DOWNLOAD-WINDOWS_ZIP_(V1.0.0)-00e676?style=for-the-badge&labelColor=23272e&logo=windows&logoColor=white" alt="DOWNLOAD WINDOWS ZIP (V1.0.0)" /></a>
+    &nbsp;
+    <a href="https://damsarachethiyaa-dev.github.io/github-portfolio/#projects"><img src="https://img.shields.io/badge/PORTFOLIO-CASE_STUDY-7c4dff?style=for-the-badge&labelColor=23272e&logo=googlechrome&logoColor=white" alt="PORTFOLIO CASE STUDY" /></a>
+  </p>
+
+  <p>
+    <img src="https://img.shields.io/badge/JAVA-8_%7C_17_LTS-ED8B00?style=for-the-badge&labelColor=23272e&logo=openjdk&logoColor=white" alt="JAVA 8 | 17 LTS" />
+    &nbsp;
+    <img src="https://img.shields.io/badge/GUI-SWING_+_FLATLAF-5382a1?style=for-the-badge&labelColor=23272e" alt="GUI SWING + FLATLAF" />
+    &nbsp;
+    <img src="https://img.shields.io/badge/DATABASE-MYSQL_8.0-005C84?style=for-the-badge&labelColor=23272e&logo=mysql&logoColor=white" alt="DATABASE MYSQL 8.0" />
+    &nbsp;
+    <img src="https://img.shields.io/badge/REPORTS-JASPERREPORTS_6.21-2e7d32?style=for-the-badge&labelColor=23272e" alt="REPORTS JASPERREPORTS 6.21" />
+    &nbsp;
+    <a href="LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-ff6d00?style=for-the-badge&labelColor=23272e" alt="LICENSE MIT" /></a>
+  </p>
+
+  <p>
+    <img src="docs/readme-stats.svg" width="606" alt="Latest release v1.0.0, admin and cashier roles, MIT open source" />
+  </p>
+
+
+</div>
+
+<br />
 
 ---
 
