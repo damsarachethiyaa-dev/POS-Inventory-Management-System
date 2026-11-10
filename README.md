@@ -28,13 +28,7 @@
   </p>
 
   <p>
-    <a href="https://github.com/damsarachethiyaa-dev/POS-Inventory-Management-System/releases">
-      <img src="https://img.shields.io/github/downloads/damsarachethiyaa-dev/POS-Inventory-Management-System/total?style=for-the-badge&logo=github&logoColor=white&label=TOTAL%20DOWNLOADS&labelColor=23272e&color=00e676" alt="Total downloads" />
-    </a>
-  </p>
-
-  <p>
-    <img src="docs/readme-stats.svg" width="606" alt="Latest release v1.0.0, admin and cashier roles, MIT open source" />
+    <img src="docs/readme-stats.svg" width="606" alt="Downloads, latest release v1.0.0, MIT open source" />
   </p>
 
 
